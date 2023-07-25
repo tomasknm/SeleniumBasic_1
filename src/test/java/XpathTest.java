@@ -29,7 +29,6 @@ public class XpathTest {
         driver.findElement(By.xpath("/html/body/div/div/form/div[4]/input")).sendKeys(PASSWORD);
         driver.findElement(By.xpath("/html/body/div/div/form/div[5]/input")).sendKeys(PASSWORD_REPEAT);
         driver.findElement(By.tagName("button")).click();
-        //assert(driver.findElement(By.className("div.container alert-success")).isDisplayed());
 
 
 
