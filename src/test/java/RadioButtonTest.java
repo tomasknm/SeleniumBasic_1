@@ -9,6 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class RadioButtonTest {
     private WebDriver driver;
     private String BASE_URL = "http://localhost/zenaalebomuz.php";
+    int testCase = 0;
 
     @Before
     public void setUp() {driver = new FirefoxDriver();}
@@ -19,7 +20,6 @@ public class RadioButtonTest {
         driver.findElement(By.xpath("//div/label[1]/input")).click();
         Assert.assertTrue(driver.findElement(By.xpath("//h1[@class='description text-center']")).getText().contains("wurst"));
         Assert.assertFalse((driver.findElement(By.xpath("/html/body/div/h1")).isSelected()));
-
     }
 
     @After
