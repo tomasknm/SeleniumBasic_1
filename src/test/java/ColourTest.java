@@ -9,7 +9,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.HexFormat;
 import java.util.List;
 
 public class ColourTest {

@@ -34,12 +34,10 @@ public class TitleTest {
         for (String pageUrl : pageUrls) {
             driver.get(pageUrl);
             String exectedTitle = pageUrl.substring(pageUrl.lastIndexOf("/")+1,pageUrl.indexOf(".php"));
-            String expectedTitleCapital = exectedTitle.substring(0,1).toUpperCase() + exectedTitle.substring(1);
-            System.out.println(expectedTitleCapital);
             String currentTitle = driver.getTitle().substring(10);
             System.out.println(currentTitle);
-            Assert.assertEquals(expectedTitleCapital,currentTitle);
-        }
+            Assert.assertEquals(exectedTitle.substring(0,1).toUpperCase() + exectedTitle.substring(1),currentTitle);
+            }
     }
 
     @After
